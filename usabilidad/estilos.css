@@ -1,0 +1,18 @@
+.csstable1 {
+		        width: 70%;
+            text-align: center;
+            margin:auto;
+		    }
+.csstable1thead{
+		        background-color:pink;
+		        color: white;
+		    }
+.csstable1tbody{
+		        background-color: white;
+		        color: black;
+            text-align: left;
+		    }
+.csstable1tfoot{
+		        background-color: white;
+		        color: black;
+		    }

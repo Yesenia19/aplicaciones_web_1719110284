@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<title>Actividad 2.3</title>
+		<style>
+		    #table1 {
+		        width: 100%;
+		    }
+		    #table1 thead{
+		        background-color: green;
+		        color: white;
+		    }
+		    #table1 tbody{
+		        background-color: white;
+		        color: black;
+		    }
+		    #table1 tfoot{
+		        background-color: white;
+		        color: black;
+		    }
+		    
+		</style>
+	</head>
+	<body>
+		
+		<h1>Etiquetas de formularios</h1>
+		
+		<table id="table1" border="1">
+		    <caption></caption>
+		    <thead>
+		        <tr>
+		            <th> Etiqueta </th>
+		            <th> Descripción </th>
+                <th> Ejemplo </th>
+		        </tr>
+		    </thead>
+        <tbody>
+		        <tr>
+		            <td> < input > hidden </td>
+                <td> Un campo hidden se lo denomina campo oculto. Su utilidad se presenta cuando desde el servidor se genera una página dinámica por ejemplo mediante PHP y se almacena en un campo oculto un valor que se rescatará al subir el formulario al servidor. </td>
+                 <td> < input type="hidden" value="10:20" name="hora" >: Este parametro mandara la hora pero no la mostrara al usuario. </td>  
+		        </tr>
+            <tbody>
+		        <tr>
+		            <td> < input type=text > </td>
+                <td> Crean campos de texto básicos de una sola línea. Se usan en cualquier lugar donde desees que el usuario ingrese un valor de una sola línea y no hay un tipo de entrada más específico disponible para recopilar ese valor. </td>
+                 <td> < input type="text" id="name" name="name" required
+       minlength="4" maxlength="8" size="10" >: Esta etiqueta nos da los valores que debe llevar lo que se esta solicitando</td>  
+		        </tr>
+            <tbody>
+		        <tr>
+		            <td> < input type=search > </td>
+                <td> Representa un campo de texto de una sola línea para propósitos de búsqueda, el cual permite a los usuarios editar una sola línea de texto regular. Los controles de búsqueda son útiles para recopilar líneas cortas de texto que los agentes procesadores o programas del lado cliente usarán como parámetros para conducir operaciones de búsqueda. </td>
+                 <td> Búsqueda de música: < input type="search" name="busquedamusica" >: Esta etiqueta nos ayuda a buscar algo que esta solicitando el cliente </td>  
+		        </tr> 
+            <tbody>
+		        <tr>
+		            <td> < input type=tel > </td>
+                <td> Representa un campo para un número telefónico. El control asociado a este campo es una caja de texto que permite a los usuarios editar una sola línea de texto regular, sin requerimientos particulares sobre el formato.  </td>
+                 <td> Teléfono: < input type="tel" name="telefono" placeholder="(Código de área) Número" > </td>  
+		        </tr> 
+            <tbody>
+		        <tr>
+		            <td> < input type=url > </td>
+                <td> Representa un campo para un solo URL absoluto. El control asociado a este campo es una caja de texto que permite a los usuarios editar una sola línea de texto regular. </td>
+                 <td> Sitio web: < input type="url" name="sitioweb" placeholder="¿Tienes un sitio web?" > </td>  
+		        </tr>
+            <tbody>
+		        <tr>
+		            <td> < input type=email > </td>
+                <td> Se utilizan para permitir que el usuario ingrese y edite una dirección de correo o, si se especifica el atributo multiple, una lista de direcciones de correo, editar una sola línea de texto regular. </td>
+                 <td> < input type="email" id="email"
+       pattern=".+@globex.com" size="30" required > </td>  
+		        </tr>
+            <tbody>
+		        <tr>
+		            <td> < input type=password > </td>
+                <td> Proporcionan una forma para que el usuario ingrese una contraseña de forma segura. El elemento se presenta como un control de editor de texto, sin formato, de una línea, en el que el texto está oculto para que no pueda leerse, generalmente reemplazando cada carácter con un símbolo como el asterisco ("*") o un punto ("•"). </td>
+                 <td> < input type="password" pattern=".{6,}" >: Este ejemplo creará un elemento password que deberá contener 6 o más carácteres. </td>  
+		        </tr>
+            <tbody>
+		        <tr>
+		            <td> < input type=date > </td>
+                <td> Permiten a los usuarios proporcionar una fecha, bien a través de un cuadro de texto que valida automáticamente el contenido, o bien mediante una interfaz especial de selección de fechas. </td>
+                 <td> < input type="date" id="start" name="trip-start"
+       value="2018-07-22"
+       min="2018-01-01" max="2018-12-31" > </td>  
+		        </tr>
+            <tbody>
+		        <tr>
+		            <td> < input type=month > </td>
+                <td> Representa un campo para la entrada de un mes.  </td>
+                 <td> Mes de nacimiento: < input type="month" name="mesnacimiento" > </td>  
+		        </tr>
+            <tbody>
+		        <tr>
+		            <td> < input type=week > </td>
+                <td> Representa un campo para la entrada de una semana.  </td>
+                 <td> Selecciona una semana: < input type="week" name="unasemana" > </td>  
+		        </tr>
+            <tbody>
+		        <tr>
+		            <td> < input type=time > </td>
+                <td> Representa un campo para la entrada de una hora.  </td>
+                 <td> Tiempo estimado de arribo: < input type="time" name="eta" > </td>  
+		        </tr>
+            <tbody>
+		        <tr>
+		            <td> < input type=datetime-local > </td>
+                <td> Representa un campo para una fecha y hora local sin información de zona horaria. Este tipo de campos es particularmente útil para recolectar un punto en el tiempo, que es específco de un lugar.  </td>
+                 <td> Reunión: < input type="datetime-local" name="horareunion" > </td>  
+		        </tr>
+            <tbody>
+		        <tr>
+		            <td> < input type=number > </td>
+                <td> Representa al usuario ingresar un número. Éstos incluyen validación incorporada para rechazar entradas no numéricas. El navegador puede optar por proveer flechas de pasos para permitir al usuario incrementar y decrementar el valor usando su ratón o símplemente pulsando con la punta del dedo. </td>
+                 <td> < input type="number" id="tentacles" name="tentacles"
+       min="10" max="100" > </td>  
+		        </tr>
+            <tbody>
+		        <tr>
+		            <td> < input type=range > </td>
+                <td> Permite que el usuario especificar un valor numérico comprendido entre un valor mínimo y máximo. El valor exacto, sin embargo, no se considera importante. Se repesenta típicamente como un "tirador" o un control deslizante en lugar de un campo de texto como otros tipos de < input >. </td>
+                 <td> < input type="range" min="5" max="10" step="0.01" > </td>  
+		        </tr>
+            <tbody>
+		        <tr>
+		            <td> < input type=color > </td>
+                <td> Permite proporcionar a un elemento de interfaz de usuario que permite a los usuarios especificar un color, bien mediante una interfaz visual de selección, bien a través de un cuadro de texto donde ingresar un valor hexadecimal en el formato «#rrggbb». Solo se permiten colores simples (sin canal alfa).  </td>
+                 <td> < input type="color" value="#ff0000" id="muestrario" > </td>  
+		        </tr>
+            <tbody>
+		        <tr>
+		            <td> < input type=checkbox > </td>
+                <td> Permite insertar un vector o array de valores. El atributo value es usado para definr el valor enviado por el checkbox. El atributo checked se usa para indicar que el elemento está seleccionado. </td>
+                 <td> < input type="checkbox" id="cbox1" value="first_checkbox" > </td>  
+		        </tr>
+            <tbody>
+		        <tr>
+		            <td> < input type=radio > </td>
+                <td> Permite una opción que pertenece a un grupo en el que no más de una opción puede ser seleccionada al mismo tiempo. Estos grupos están normalmente conformados por un número de botones de opción, todos compartiendo el mismo valor en el atributo name. </td>
+                 <td> < input type="radio" name="empleoactual" value="tiempocompleto" > </td>  
+		        </tr>
+            <tbody>
+		        <tr>
+		            <td> < input type=file > </td>
+                <td> Permite un control para seleccionar una lista de uno o más archivos para ser subidos al servidor. </td>
+                 <td> < input type="file" name="archivosubido" > </td>  
+		        </tr>
+            <tbody>
+		        <tr>
+		            <td> < input type=submit > </td>
+                <td> Permite un botón que, cuando es presionado, envía el formulario (form) al que pertenece. </td>
+                 <td> < input type="submit" value="Enviar datos" > </td>  
+		        </tr>
+            <tbody>
+		        <tr>
+		            <td> < input type=image > </td>
+                <td> Representa un botón de envío gráfico, que es una imagen normal que al ser presionada, envía el formulario (form) al cual pertenece. </td>
+                 <td> < input type="image" name="botondeenvio" src="../../../images/submit-form.png" alt="Enviar formulario" > </td>  
+		        </tr>
+            <tbody>
+		        <tr>
+		            <td> < input type=reset > </td>
+                <td> Representa un botón que, cuando es presionado, restaura todos los campos del formulario (form) al cual pertenece, a sus valores iniciales. </td>
+                 <td> < input type="reset" value="Restaurar" > </td>  
+		        </tr>
+            <tbody>
+		        <tr>
+		            <td> < select name="" > </td>
+                <td> Indicara el nombre del campo de seleccion. </td>
+                 <td> < select name="deporte"> < option >Fútbol< /option >< option >Críquet< /option >< option >Básquetbol< /option >< option >Hockey< /option >< option >Tenis< /option >< /select > 
+                </td>  
+		        </tr>
+            <tbody>
+		        <tr>
+		            <td> < select size="" > </td>
+                <td> Indicara el numero de opciones visibles. Si le asignamos 1, la seleccion se presentara como un menu desplegable. Si le asignamos un valor mayor se presentara como una lista con barra de desplazamiento.</td>
+                 <td> < select size = "2">< option value="bca">BCA< /option>< option value="bcom">B.COM< /option>< option value="btech">B.TECH< /option>< option value="btech">B.SC< /option>< /select > 
+                </td>  
+		        </tr>
+            <tbody>
+		        <tr>
+		            <td> < select multiple > </td>
+                <td> Indica si se pueden realizar multiples selecciones.</td>
+                 <td> < select name="bebidas" multiple>< option value="1">Coñac< /option>< option value="2">Vodka< /option>< option value="3">Whisky< /option>< option value="4">Ron< /option>< option value="5">Cerveza< /option>< option value="6">Ginebra< /option>< /select > 
+                </td>  
+		        </tr>
+            <tbody>
+		        <tr>
+		            <td> < textarea name="" > </td>
+                <td> En esta etiqueta se introduce el nombre del campo.</td>
+                 <td> < TEXTAREA NAME="Texto" > </td>  
+		        </tr>
+            <tbody>
+		        <tr>
+		            <td> < textarea cols= > </td>
+                <td> En esta etiqueta se introduce el numero de columnas de texto visible.</td>
+                 <td> < TEXTAREA COLS=20 > </td>  
+		        </tr>
+            <tbody>
+		        <tr>
+		            <td> < textarea rows= > </td>
+                <td> En esta etiqueta se introduce el numero de filas de texto visible. </td>
+                 <td> < TEXTAREA ROWS=10 > </td>  
+		        </tr>
+            <tbody>
+		        <tr>
+		            <td> < input type="radio" > </td>
+                <td> Se utiliza cuando se envía un formulario, ya que con este solo se envían al servidor los botones de radio que están marcados actualmente, y el valor informado es el valor del atributo de valor. Si el valor no se especifica de otra manera, es la cadena activada de forma predeterminada. </td>
+                 <td> < input type="radio" id="contactChoice2" value="phone" > </td>  
+		        </tr>
+ 	      </tbody>
+		    <tfoot>
+		    </tfoot>
+		</table>
+	</body>
+</html>

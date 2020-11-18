@@ -1,0 +1,58 @@
+<!DOCTYPE html >
+<html >
+	<head>
+    <link href="estilos.css" rel="stylesheet" type="text/css"> 
+		<title>Formulario</title>
+	</head>
+	<body class="cssfondo">
+	    
+	    <h1 class="css1label">Formulario</h1> 
+	    
+	    <form action="action_page.php">
+        <div class="form-group">
+          <label for="matricula">Matricula:</label><p>
+          <input type="number" class="form-control" placeholder="Ingresa tu matricula" id="matricula"></p>
+        </div>
+        <div class="form-group">
+          <label for="nombre">Nombre(s):</label><p>
+          <input type="text" class="form-control" placeholder="Ingresa tu(s) nombre(s)" id="nombre"></p>
+        </div>
+        <div class="form-group">
+          <label for="apellido1">Primer apellido:</label><p>
+          <input type="text" class="form-control" placeholder="Ingresa tu primer apellido" id="apellido1"></p>
+        </div>
+        <div class="form-group">
+          <label for="apellido2">Segundo apellido:</label><p>
+          <input type="text" class="form-control" placeholder="Ingresa tu segundo apellido" id="apellido2"></p>
+        </div>
+        <div class="form-group">
+          <label for="edad">Edad:</label><p>
+          <input type="number" class="form-control" placeholder="Ingresa tu edad actual" id="edad"></p>
+        </div>
+        <div class="form-group">
+          <label for="fechanacio">Fecha de nacimiento:</label><p>
+          <input type="date" class="form-control" placeholder="Ingresa fecha de nacimiento" id="fechanacio"></p>
+        </div>
+        <div class="form-check-inline">Sexo</label><p>
+          <label class="form-check-label"></p>
+            <input type="radio" class="form-check-input" name="optradio">Femenino
+          </label>
+        </div>
+        <div class="form-check-inline">
+          <label class="form-check-label">
+             <input type="radio" class="form-check-input" name="optradio">Masculino<p>
+          </label></p>
+        </div>
+        <div class="form-group">
+          <label for="estado">Estado:</label><p>
+            <input type="text" class="form-control" placeholder="Ingresa tu estado" id="estado"></p>
+          </label>
+        </div>
+        <button type="submit" class="btn btn-primary">Guardar
+        </button>
+        <button type="reset" class="btn btn-primary">Limpiar
+        </button>
+      </form>
+		
+	</body>
+</html>
